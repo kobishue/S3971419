@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head>
+
+    <title> Kobi Shue </title> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+    
+    
+    <style>
+      .row{
+          width: 830px;px;
+          margin: 30px auto 30px auto ;
+      }
+      .image-container {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 30px;px;
+      }
+  </style>
+
+
+</head> 
+
+
+
+
+<body> 
+
+<style>
+  body {
+
+    background-image: url(img/background7.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+</style>
+
+
+
+<!-- Bird Gif Position -->
+<style>
+            div.fixed { position: fixed; right: 6em; top: 16.4em; }
+</style>
+
+
+<!-- Play Button position -->
+<style>
+              div.fixed1 { position: fixed; left: 2em; }
+  </style>
+  
+
+
+
+<div class="fixed1">
+
+  <img id="playbutton" src="img/playbutton.gif" height="70">
+
+</div>
+
+
+
+
+<div class="fixed">
+
+      <img id="bird" src="img/bird.gif" height="170px">
+
+</div>
+
+
+
+
+  
+
+
+
+  <div class="row">
+    <div class="image-container"><img id="plant1" src="img/trumpetplant.png" height="200" width=""/></div>
+    <div class="image-container"><img id="plant2" src="img/shakerplant.png" height="200" width=""/></div>
+    <div class="image-container"><img id="plant3" src="img/cymbalplant.png" height="200" width="="/></div>
+</div>
+
+<div class="row">
+  <div class="image-container"><img id="plant4" src="img/pipeplant.png" height="200" width=""/></div>
+  <div class="image-container"><img id="plant5" src="img/singingplant.png" height="200" width=""/></div>
+  <div class="image-container"><img id="plant6" src="img/tubaplant.png" height="200" width=""/></div>
+  </div>
+
+  <div class="row">
+    <div class="image-container"><img id="plant7" src="img/chimeplant.png" height="200" width=""/></div>
+    <div class="image-container"><img id="plant8" src="img/timpanyplant.png" height="200" width=""/></div>
+    <div class="image-container"><img id="plant9" src="img/mushroomplant.png" height="200" width=""/></div>
+</div>
+  
+
+
+
+
+<script>
+
+            var sound1 = new buzz.sound("sound/trumpetplant1.mp3");
+            var sound2 = new buzz.sound("sound/shakerplant1.mp3");
+            var sound3 = new buzz.sound("sound/cymbalplant1.mp3");
+            var sound4 = new buzz.sound("sound/pipeplant1.mp3");
+            var sound5 = new buzz.sound("sound/singingplant1.mp3");
+            var sound6 = new buzz.sound("sound/tubaplant1.mp3");
+            var sound7 = new buzz.sound("sound/chimeplant1.mp3");
+            var sound8 = new buzz.sound("sound/timpanyplant1.mp3");
+            var sound9 = new buzz.sound("sound/mushroomplant1.mp3");
+            var sound10 = new buzz.sound("sound/track.mp3"); 
+            var sound11 = new buzz.sound("sound/bird.mp3");
+          
+
+    
+
+
+
+            window.onload = function() {
+                document.getElementById('plant1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('plant2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('plant3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('plant4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('plant5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('plant6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('plant7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('plant8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('plant9').addEventListener('click', function () {sound9.play(); });
+
+
+        
+                document.getElementById('playbutton').addEventListener('click', function () {sound10.play(); });
+                document.getElementById('bird').addEventListener('click', function () {sound11.play(); });
+              
+    
+            }  
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
